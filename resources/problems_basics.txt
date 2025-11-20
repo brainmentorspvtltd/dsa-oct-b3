@@ -1,0 +1,23 @@
+Number and Digit-Based Logic
+- Print All Digits of a Number Extract and print each digit without using string functions.
+- Sum of All Digits Input: 3471 → Output: 15
+- Reverse a Number Input: 1234 → Output: 4321
+- Count Number of Digits Input: 5402 → Output: 4
+- Check if Number is Palindrome Input: 121 → True, Input: 123 → False
+- Check if Number is Prime Input: 13 → True, 12 → False
+- Check if Number is Even or Odd
+- Find the Largest Digit in a Number
+- Swap First and Last Digit Input: 1234 → Output: 4231
+- Check if All Digits Are Unique
+
+Loops and Series
+- Print Numbers from 1 to N
+- Print All Even Numbers from 1 to N
+- Print Sum of First N Natural Numbers
+- Print Multiplication Table of a Number Example: 5 → 5 10 15 ... 50
+- Print Factorial of a Number Input: 5 → Output: 120
+- Fibonacci Series up to N Terms
+- Count Even and Odd Digits Separately
+- Sum of Squares of First N Numbers
+- Print All Prime Numbers from 1 to N
+- Count How Many Digits are Divisors of the Number Input: 122 → Output: 3 (1,2,2 divide 122)
