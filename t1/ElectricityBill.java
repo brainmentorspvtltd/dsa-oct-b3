@@ -5,9 +5,13 @@ Electricity Bill Generate
     Beyond 200 units, each unit price is Rs 3.5
 
 */
+
+import java.util.Scanner;
+
 public class ElectricityBill {
     public static void main(String[] args) {
-        int units = 250;
+        Scanner sc = new Scanner(System.in);
+        int units = sc.nextInt();
 
         // if(units>200){
         //     System.out.println("Total Bill: "+(100*1.5 + 100*2.5 + (units-200)*3.5));
