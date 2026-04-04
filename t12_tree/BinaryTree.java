@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -188,6 +189,7 @@ public class BinaryTree {
 
     public static ArrayList<Integer> topView(Node root) {
         ArrayList<Integer> list = new ArrayList<>();
+
         if(root == null) return list;
         // hd, node
         Map<Integer, Integer> map = new HashMap<>();
@@ -199,11 +201,15 @@ public class BinaryTree {
             int hd = p.hd;
             Node node = p.node;
             
-            // sop(curr.val)
+            // Top view
             if(!map.containsKey(hd)){
             // if(map.get(hd)==null){
                 map.put(hd, node.val);
             }
+            // Bottom view
+            // map.put(hd, node.val);
+
+
             
             if(node.left!=null)
             q.offer(new Pair(hd-1, node.left));
@@ -212,7 +218,7 @@ public class BinaryTree {
         }
         
         
-        Set<Integer> sortedKeys = new TreeSet(map.keySet());
+        Set<Integer> sortedKeys = new TreeSet<>(map.keySet());
         for(int key: sortedKeys){
            list.add(map.get(key));
         }
